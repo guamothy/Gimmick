@@ -4,7 +4,7 @@ import fs from 'node:fs';
 
 import paths from './paths.js';
 
-let script = await axios.get(`https://github.com/TheLazySquid/GimkitCheat/blob/682f93293b30816744706ceacc52741041213c1e/build/bundle.js`);
+let script = await axios.get(`https://raw.githubusercontent.com/TheLazySquid/GimkitCheat/682f93293b30816744706ceacc52741041213c1e/build/bundle.js`);
 fs.writeFileSync(import.meta.dirname + '/bundle.txt', script.data);
 
 const app = express();
